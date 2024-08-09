@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+        }
+
+        body {
+            background-color: black;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .reviews {
+            margin-top: 10rem;
+            overflow: hidden;
+        }
+
+        .reviews-title {
+            text-align: center;
+            margin-bottom: 7rem;
+        }
+
+        .reviews-title p {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            color: white;
+        }
+
+        .reviews-row {
+            display: flex;
+            justify-content: center; 
+        }
+
+        .reviews-card {
+            margin: 0 1rem; 
+        }
+
+        .card-img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .card-text {
+            background-color: white;
+            padding: 2rem 4rem;
+            height: 359px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 425px) {
+            .card-text {
+                padding: 1rem 2rem;
+                height: fit-content;
+            }
+
+            .reviews-card {
+                margin: 0.5rem; /* Adjust spacing for smaller screens */
+            }
+
+            .reviews-row {
+                flex-direction: column;
+                align-items: center; /* Center cards vertically */
+            }
+        }
+
+        /* Keyframe animations */
+        .row-first, .row-third {
+            animation: move-first 20s linear infinite;
+            margin-bottom: 2rem;
+        }
+
+        .row-second {
+            transform: translateX(-1000px);
+            animation: move-second 20s linear infinite;
+            margin-bottom: 2rem;
+        }
+
+        @keyframes move-first {
+            50% {
+                transform: translateX(-1000px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes move-second {
+            50% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-1000px);
+            }
+        }
+</style>
+<body>
+    <section class="reviews">
+        <div class="reviews-title">
+            <p>Reviews</p>
+        </div>
+        <div>
+            <div class="reviews-row row-first">
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-01.jpeg" alt="">
+                </div>
+
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-02.jpeg" alt=""/>
+                </div>
+
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-03.jpeg" alt="">
+                </div>
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-04.jpeg" alt="">
+                </div>
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-05.jpeg" alt="">
+                </div>
+                
+
+            </div>
+            <div class="reviews-row row-second">
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-06.jpeg" alt="">
+                </div>
+
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-07.jpeg" alt=""/>
+                </div>
+
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-08.jpeg" alt="">
+                </div>
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-09.jpeg" alt="">
+                </div>
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-10.jpeg" alt="">
+                </div>
+            </div>
+            <div class="reviews-row row-third">
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-11.jpeg" alt="">
+                </div>
+
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-12.jpeg" alt=""/>
+                </div>
+
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-14.jpeg" alt="">
+                </div>
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-15.jpeg" alt="">
+                </div>
+                <div class="reviews-card">
+                    <img class="card-img" src="Assets/Images/gallery-16.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

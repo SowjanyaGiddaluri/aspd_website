@@ -16,6 +16,8 @@
     <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
         rel="stylesheet">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,14 +38,14 @@
                         <a class="nav-link" href="about.html" id="customItem3">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="Internships.html"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="customItem4">
-                            Services
+                            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Services
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="Internships.html" id="dropItem1">INTERNSHIPS</a>
-                            <a class="dropdown-item" href="recruitment.html" id="dropItem2">RECRUITMENT</a>
-                            <a class="dropdown-item" href="higher_education.html" id="dropItem3">HIGHER EDUCATION</a>
-                            <a class="dropdown-item" href="Immigration.html" id="dropItem4">IMMIGRATION</a>
+                            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <a class="dropdown-item" href="Internships.html">INTERNSHIPS</a>
+                                <a class="dropdown-item" href="recruitment.html">RECRUITMENT</a>
+                                <a class="dropdown-item" href="higher_education.html">HIGHER EDUCATION</a>
+                                <a class="dropdown-item" href="Immigration.html">IMMIGRATION</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -75,19 +77,83 @@
               <h1>We are American Skills & Personality Development</h1>
               <p>International Internships and Jobs for Hotel Management students.</p>
               <h5>DREAM, BELIEVE & CONQUER</h5>
+              <button><i class="fa-solid fa-phone"></i> Request Call</button>
             </div>
         </div>
     </div>
-    <div class="bg-banner-section">
+    <div class="bg-about-company-section">
         <div class="container">
-            <div class="d-flex flex-row justify-content-center">
-                <img src="Assets/Images/group-positive-young-people-posing-together.jpg" class="aspd-about-company-image"/>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="content">
+                        <h2 class="content-heading">American skills & Personality development</h2>
+                        <p class="content-para">American skills & Personality Development specializes in the placement of qualified international Hospitality Graduates and young professionals into different hotels/ resorts/ IT Industry We match qualified Interns & Trainees into paid positions in USA Hotels/ Resort/ IT Industry to receive on the job training, build career experience, and improve professional skills.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="bg-about-company-image">
+                        <img src="Assets/Images/business-meeting-office.jpg" class="bg-about-company-section-image"/>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div>
-        
+    
+    <div class="bg-stroy-section pb-5">
+        <div class=container>
+            <div class="row pb-5">
+                <div class="col-md-4">
+                    <div class="home-card">
+                        <i class="fa-solid fa-phone-volume home-card-icon"></i>
+                        <h5 class="home-card-head">Support</h5>
+                        <p class="home-card-para">983-152-3136</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="home-card">
+                        <i class="fa-solid fa-clock home-card-icon"></i>
+                        <h5 class="home-card-head">Timings</h5>
+                        <p class="home-card-para">Mon-Fri: 11.00AM-5.00PM</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="home-card">
+                        <i class="fa-solid fa-location-crosshairs home-card-icon"></i>
+                        <h5 class="home-card-head">Where are we</h5>
+                        <p class="home-card-para">Kolkata, West Bengal 700091</p>
+                    </div>
+                </div>     
+            </div>
+            <div class="row">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-6 order-1 order-md-2 d-flex justify-content-center">
+                        <img src="Assets/Images/home-section-aspd-03.jpeg" class="bg-stroy-section-image" />
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center order-2 order-md-1 mb-3 text-center text-md-left mt-3">
+                        <h1 class="bg-stroy-heading">Our Stroy</h1>
+                        <p class="bg-stroy-paragraph">
+                            The team of the AMERICAN SKILLS & PERSONALITY DEVELOPMENT is composed of experienced educators, competent administrators and dedicated trainers. In fact, the essence of the functioning of the AMERICAN SKILLS & PERSONALITY DEVELOPMENT is the Various International Internships and Job opportunities.
+                        </p>
+                        <button class="home-card-btn">Know More</button>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center order-1 order-md-2 mb-3 text-center text-md-left mt-3">
+                        <h1 class="bg-stroy-heading">Our Mission</h1>
+                        <p class="bg-stroy-paragraph">
+                            AMERICAN SKILLS & PERSONALITY DEVELOPMENT began with a small number of students. However today it has grown as a premier institution which guides the students for their pathway to success in their International hospitality careers. This is mainly due to the excellent performance for our students and the dedicated efforts our team in Kolkata and Hyderabad. At AMERICAN SKILLS & PERSONALITY DEVELOPMENT’s we believe that SUCCESS is not born; it is made.
+                        </p>
+                        <button class="home-card-btn">Know More</button>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 order-2 order-md-1 d-flex justify-content-center">
+                        <img src="Assets/Images/home-section-aspd-03.jpeg" class="bg-stroy-section-image" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="Assets/JavaScript/index.js"></script>
+
     <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
@@ -166,10 +232,10 @@
                                 <h3>Newsletter</h3>
                             </div>
                             
-                            <div class="subscribe-form">
-                                <div action="#">
+                            <div class="footer-subscribe-form">
+                                <div class="d-flex flex-row">
                                     <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                    <button class="footer-subscribe-form-btn"><i class="fa-brands fa-telegram footer-subscribe-form-icon"></i></button>
                                 </div>
                             </div>
                             <div class="footer-text mb-25">
