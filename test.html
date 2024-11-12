@@ -1,174 +1,150 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Glowing Block</title>
+    <style>
+        .block {
+            pos;
+            margin: 10% auto 0;
+            width: 50%;
+            height: 400px;
+            background: linear-gradient(0deg, black, rgb(44, 43, 43));
+            z-index: 1;
+        }
+        .glow::before, .glow::after {
+            content: '';
+            position: relative;
+            left: -2px;
+            top: -2px;
+            background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66);
+            background-size: 400% 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            animation: animate 20s linear infinite;
+            border-radius: 8px; 
+        }
+        @keyframes animate {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
 </head>
-<style>
-* {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-        }
-
-        body {
-            background-color: black;
-            max-width: 1440px;
-            margin: 0 auto;
-        }
-
-        .reviews {
-            margin-top: 10rem;
-            overflow: hidden;
-        }
-
-        .reviews-title {
-            text-align: center;
-            margin-bottom: 7rem;
-        }
-
-        .reviews-title p {
-            font-family: 'Playfair Display', serif;
-            font-size: 5rem;
-            color: white;
-        }
-
-        .reviews-row {
-            display: flex;
-            justify-content: center; 
-        }
-
-        .reviews-card {
-            margin: 0 1rem; 
-        }
-
-        .card-img {
-            width: 100%; 
-            height: auto; 
-        }
-
-        .card-text {
-            background-color: white;
-            padding: 2rem 4rem;
-            height: 359px;
-            overflow: hidden;
-        }
-
-        @media (max-width: 425px) {
-            .card-text {
-                padding: 1rem 2rem;
-                height: fit-content;
-            }
-
-            .reviews-card {
-                margin: 0.5rem; /* Adjust spacing for smaller screens */
-            }
-
-            .reviews-row {
-                flex-direction: column;
-                align-items: center; /* Center cards vertically */
-            }
-        }
-
-        /* Keyframe animations */
-        .row-first, .row-third {
-            animation: move-first 20s linear infinite;
-            margin-bottom: 2rem;
-        }
-
-        .row-second {
-            transform: translateX(-1000px);
-            animation: move-second 20s linear infinite;
-            margin-bottom: 2rem;
-        }
-
-        @keyframes move-first {
-            50% {
-                transform: translateX(-1000px);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes move-second {
-            50% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-1000px);
-            }
-        }
-</style>
 <body>
-    <section class="reviews">
-        <div class="reviews-title">
-            <p>Reviews</p>
-        </div>
-        <div>
-            <div class="reviews-row row-first">
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-01.jpeg" alt="">
-                </div>
+    <div class="block glow"></div>
+</body>
+</html>-->
 
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-02.jpeg" alt=""/>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circle with Icons</title>
+<style>
+  /* Center Container */
+  .circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+  }
 
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-03.jpeg" alt="">
-                </div>
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-04.jpeg" alt="">
-                </div>
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-05.jpeg" alt="">
-                </div>
-                
+  /* Icon Container */
+  .icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+  }
 
-            </div>
-            <div class="reviews-row row-second">
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-06.jpeg" alt="">
-                </div>
+  /* Icon Positions */
+  .icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-07.jpeg" alt=""/>
-                </div>
+  .icon:hover {
+    background-color: #45a049;
+  }
 
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-08.jpeg" alt="">
-                </div>
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-09.jpeg" alt="">
-                </div>
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-10.jpeg" alt="">
-                </div>
-            </div>
-            <div class="reviews-row row-third">
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-11.jpeg" alt="">
-                </div>
+  /* Individual Icon Positions */
+  .icon1 { top: 10%; left: 50%; transform: translate(-50%, -50%); }
+  .icon2 { top: 50%; left: 90%; transform: translate(-50%, -50%); }
+  .icon3 { top: 90%; left: 50%; transform: translate(-50%, -50%); }
+  .icon4 { top: 50%; left: 10%; transform: translate(-50%, -50%); }
 
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-12.jpeg" alt=""/>
-                </div>
+  /* Content Display */
+  .content {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
 
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-14.jpeg" alt="">
-                </div>
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-15.jpeg" alt="">
-                </div>
-                <div class="reviews-card">
-                    <img class="card-img" src="Assets/Images/gallery-16.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+  .content.active {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="circle-container">
+  Center Content
+</div>
+
+<div class="icon-container">
+  <div class="icon icon1" onclick="showContent(1)">1</div>
+  <div class="icon icon2" onclick="showContent(2)">2</div>
+  <div class="icon icon3" onclick="showContent(3)">3</div>
+  <div class="icon icon4" onclick="showContent(4)">4</div>
+</div>
+
+<!-- Content Display -->
+<div id="content1" class="content">Content for Icon 1</div>
+<div id="content2" class="content">Content for Icon 2</div>
+<div id="content3" class="content">Content for Icon 3</div>
+<div id="content4" class="content">Content for Icon 4</div>
+
+<script>
+  function showContent(iconNumber) {
+    // Hide all content
+    document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+    
+    // Show the selected content
+    document.getElementById(`content${iconNumber}`).classList.add('active');
+  }
+</script>
+
 </body>
 </html>
+
+
+        
